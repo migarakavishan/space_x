@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-import '../../models/rocket_model.dart';
-import '../../services/api_service.dart';
+import '../../../models/rocket_model.dart';
+import '../../../services/api_service.dart';
 
 class RocketSlider extends StatelessWidget {
   const RocketSlider({

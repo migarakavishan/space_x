@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/launch_pad_list.dart';
 import 'widgets/rocket_slider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -19,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   decoration: BoxDecoration(
@@ -47,7 +49,27 @@ class _HomeScreenState extends State<HomeScreen> {
                 const SizedBox(
                   height: 10,
                 ),
-                RocketSlider(size: size)
+                const Text(
+                  "Rockets",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
+                ),
+                const Divider(),
+                RocketSlider(size: size),
+                const SizedBox(
+                  height: 10,
+                ),
+                const Text(
+                  "Launch Pads",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
+                ),
+                const Divider(),
+                const LaunchPadList()
               ],
             ),
           ),
