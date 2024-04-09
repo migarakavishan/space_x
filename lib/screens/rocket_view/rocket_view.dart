@@ -76,11 +76,116 @@ class _RocketViewState extends State<RocketView> {
                 Column(
                   children: [
                     Container(
-                      height: size.height * 0.4,
+                      height: size.height * 0.25,
                       width: size.width,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.grey.shade900),
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            RichText(
+                              text: TextSpan(
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 19,
+                                ),
+                                children: <TextSpan>[
+                                  const TextSpan(text: "First Flight : "),
+                                  TextSpan(
+                                    text: widget.rocket.firstflight,
+                                    style: const TextStyle(
+                                      color: Colors.yellow,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            RichText(
+                              text: TextSpan(
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 19,
+                                ),
+                                children: <TextSpan>[
+                                  const TextSpan(text: "Country : "),
+                                  TextSpan(
+                                    text: widget.rocket.country,
+                                    style: const TextStyle(
+                                      color: Colors.yellow,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            RichText(
+                              text: TextSpan(
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 19,
+                                ),
+                                children: <TextSpan>[
+                                  const TextSpan(text: "Company : "),
+                                  TextSpan(
+                                    text: widget.rocket.company,
+                                    style: const TextStyle(
+                                      color: Colors.yellow,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            RichText(
+                              text: TextSpan(
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 19,
+                                ),
+                                children: <TextSpan>[
+                                  const TextSpan(text: "Height(meters) : "),
+                                  TextSpan(
+                                    text: widget.rocket.height.toString(),
+                                    style: const TextStyle(
+                                      color: Colors.yellow,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            RichText(
+                              text: TextSpan(
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 19,
+                                ),
+                                children: <TextSpan>[
+                                  const TextSpan(text: "Weight(kilograms) : "),
+                                  TextSpan(
+                                    text: widget.rocket.weight.toString(),
+                                    style: const TextStyle(
+                                      color: Colors.yellow,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     )
                   ],
                 )
