@@ -23,17 +23,19 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey.shade900,
-                      borderRadius: BorderRadius.circular(15)),
+                  decoration: const BoxDecoration(),
                   child: Row(
                     children: [
-                      IconButton(
-                          onPressed: () {},
-                          icon: const Icon(
-                            Icons.menu,
-                            color: Colors.white,
-                          )),
+                      Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                            image: const DecorationImage(
+                                image: NetworkImage(
+                                    "https://freelogopng.com/images/all_img/1687258717spacex-icon-png.png")),
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(30)),
+                      ),
                       const Spacer(),
                       const Text(
                         'Space X',
@@ -43,6 +45,12 @@ class _HomeScreenState extends State<HomeScreen> {
                             fontWeight: FontWeight.bold),
                       ),
                       const Spacer(),
+                      IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.search,
+                            color: Colors.white,
+                          ))
                     ],
                   ),
                 ),
