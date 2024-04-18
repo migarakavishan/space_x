@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/landing_pad_list.dart';
 import 'widgets/launch_pad_list.dart';
 import 'widgets/rocket_slider.dart';
 
@@ -77,7 +78,22 @@ class _HomeScreenState extends State<HomeScreen> {
                       fontWeight: FontWeight.bold),
                 ),
                 const Divider(),
-                const LaunchPadList()
+                const LaunchPadList(),
+                const SizedBox(
+                  height: 10,
+                ),
+                const Text(
+                  "Landing Pads",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold),
+                ),
+                const Divider(),
+                const SizedBox(
+                  height: 10,
+                ),
+                const CapsuleList()
               ],
             ),
           ),
