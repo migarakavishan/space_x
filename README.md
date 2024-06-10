@@ -21,12 +21,6 @@ Welcome to the SpaceX Flutter App! This app provides an interactive and engaging
 
 This app uses the SpaceX API, which does not require an API key. You can find more information about the API [here](https://docs.spacexdata.com/).
 
-## Usage
 
-Once the app is running, you can navigate through different sections using the bottom navigation bar:
-
-- **Rockets**: Detailed information about SpaceX rockets.
-- **Launchpads**: Information and details about SpaceX launchpads.
-- **Landing Pads**: Information and details about SpaceX landing pads.
 
 
