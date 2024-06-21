@@ -70,7 +70,7 @@ class _LaunchPadViewState extends State<LaunchPadView> {
                   Column(
                     children: [
                       Container(
-                        height: size.height * 0.25,
+                        height: size.height * 0.26,
                         width: size.width,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
