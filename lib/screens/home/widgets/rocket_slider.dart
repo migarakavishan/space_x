@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:space_x/screens/rocket_view/rocket_view.dart';
+import 'package:space_x/screens/view/rocket_view.dart';
 
 import '../../../models/rocket_model.dart';
 import '../../../services/api_service.dart';

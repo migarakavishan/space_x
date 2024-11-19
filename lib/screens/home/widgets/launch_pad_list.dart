@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:space_x/screens/rocket_view/launchpad_view.dart';
+import 'package:space_x/screens/view/launchpad_view.dart';
 
 import '../../../models/launch_pad.dart';
 import '../../../services/api_service.dart';

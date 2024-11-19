@@ -27,7 +27,7 @@ class _LaunchPadViewState extends State<LaunchPadView> {
                     child: BackButton(
                   color: Colors.white,
                   style: ButtonStyle(
-                      backgroundColor: MaterialStatePropertyAll(Colors.black)),
+                      backgroundColor: WidgetStatePropertyAll(Colors.black)),
                 ))
               ],
             ),
@@ -148,9 +148,11 @@ class _LaunchPadViewState extends State<LaunchPadView> {
                                     fontSize: 19,
                                   ),
                                   children: <TextSpan>[
-                                    const TextSpan(text: "Attempted Launches: "),
+                                    const TextSpan(
+                                        text: "Attempted Launches: "),
                                     TextSpan(
-                                      text: widget.launchpads.attemptlaunch.toString(),
+                                      text: widget.launchpads.attemptlaunch
+                                          .toString(),
                                       style: const TextStyle(
                                         color: Colors.yellow,
                                       ),
@@ -168,9 +170,11 @@ class _LaunchPadViewState extends State<LaunchPadView> {
                                     fontSize: 19,
                                   ),
                                   children: <TextSpan>[
-                                    const TextSpan(text: "Successful Launches: "),
+                                    const TextSpan(
+                                        text: "Successful Launches: "),
                                     TextSpan(
-                                      text: widget.launchpads.successfullaunches.toString(),
+                                      text: widget.launchpads.successfullaunches
+                                          .toString(),
                                       style: const TextStyle(
                                         color: Colors.yellow,
                                       ),
