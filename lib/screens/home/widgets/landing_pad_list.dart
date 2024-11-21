@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:space_x/models/landing_pad.dart';
 
-
-
 import '../../../services/api_service.dart';
 
-class CapsuleList extends StatelessWidget {
-  const CapsuleList({
+class LandingPads extends StatelessWidget {
+  const LandingPads({
     super.key,
   });
 
