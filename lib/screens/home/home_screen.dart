@@ -93,7 +93,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 const SizedBox(
                   height: 10,
                 ),
-                const LandingPads()
+                const LandingPads(),
+                const Divider(),
+                const SizedBox(
+                  height: 10,
+                ),
               ],
             ),
           ),
