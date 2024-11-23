@@ -14,6 +14,8 @@ class ApiService {
 
   final landingpads = 'https://api.spacexdata.com/v3/landpads';
 
+  final missions = 'https://api.spacexdata.com/v3/missions';
+
   Future<List<RocketModel>> getAllRockets() async {
     final response = await http.get(Uri.parse(rockets));
     if (response.statusCode == 200) {
