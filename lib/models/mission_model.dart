@@ -8,5 +8,5 @@ class MissionModel {
       {required this.id,
       required this.name,
       required this.status,
-      required this.locatio});
+      required this.location});
 }
