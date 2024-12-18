@@ -16,10 +16,6 @@ class MissionModel {
         name: json['name'],
         status: json['status'],
         location: json['location']['region'],
-        locationName: json['location']['name'],
-        longName: json['site_name_long'],
-        successfullaunches: json['successful_launches'],
-        attemptlaunch: json['attempted_launches'],
-        details: json['details']);
+        
   }
 }
